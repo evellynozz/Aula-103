@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+
+}
+
+#main{
+    display: grid;
+    grid-template-areas: "header header header"
+                         "nav nav aside"
+                         "section section aside"
+                         "footer footer footer" ;
+    grid-auto-rows: 10vh 20vh 50vh 40vh ;
+    grid-row-gap: 10px;
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a{
+    color: white;
+    font-size: 11pt;
+    text-decoration: blueviolet;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+header a: :nth-child(4){
+    font-size: 14pt;
+    color: blue;
+}
+head a:hover{
+font-size: 13pt;
+}
+nav {
+    grid-area: nav;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ nav h1 {
+     color: blue;
+     font-size: 25pt;
+
+ }
+aside {
+    grid-area: aside;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+aside p{
+    width: 150px;
+    height: ;
+    color: aliceblue;
+
+}
+
+aside h2{
+    width: 
+
+}
+
+section{
+    grid-area: section;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section img{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
